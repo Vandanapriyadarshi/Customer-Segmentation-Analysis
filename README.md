@@ -1,51 +1,117 @@
-# 🛍️ Customer Segmentation Analysis and Predicting Consumer Behaviour
+# 📊 Customer Segmentation & Spending Prediction
 
-This project focuses on segmenting customers and predicting their behavior using unsupervised and supervised machine learning techniques. It helps businesses understand different customer groups and forecast purchasing patterns to make data-driven decisions.
+A comprehensive data science project that performs **customer segmentation**, explores **consumer behavior patterns**, and builds a **predictive model** to estimate individual customer spending using machine learning.
 
----
-
-## 📌 Objectives
-
-- Perform **customer segmentation** using clustering techniques.
-- Predict **consumer behavior** using classification algorithms.
-- Visualize insights to support targeted marketing strategies.
+![Python](https://img.shields.io/badge/Made%20With-Python-blue?style=flat-square)  
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-0.24+-orange?style=flat-square)  
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)
 
 ---
 
-## 🔧 Technologies Used
+## 🔍 Overview
 
-- **Python** – Programming language  
-- **Pandas** – Data manipulation and analysis  
-- **Matplotlib** – Data visualization  
-- **Scikit-learn** – Machine learning library  
-- **K-Means Clustering** – For customer segmentation  
-- **Random Forest Classifier** – For predicting customer behavior  
-
----
-
-## 📊 Features
-
-- Clean and preprocess raw customer data
-- Perform **Exploratory Data Analysis (EDA)**
-- Apply **K-Means Clustering** to group customers
-- Train a **Random Forest** model to classify customer behavior
-- Visualize clusters and feature importance
-- Built and tested on **Google Colab**
+This project analyzes customer data to:
+- Segment customers based on demographics and behavior.
+- Identify key factors influencing customer spending.
+- Predict individual customer spending based on input features.
+- Visualize insights using charts and heatmaps.
+- Deploy a real-time **Gradio-based interface** for predictions.
 
 ---
 
-## 🚀 How to Run the Project
+## 🛠️ Technologies Used
 
-1. Clone the repository:
+- **Python (Pandas, NumPy, Matplotlib, Seaborn)**
+- **Scikit-learn** (KMeans, Random Forest, Decision Tree, LabelEncoder, StandardScaler)
+- **Gradio** (for interactive UI)
+- Google Colab (for experimentation)
 
-   ```bash
-   git clone https://github.com/your-username/Customer-Segmentation.git
-   cd Customer-Segmentation
+---
 
-.
+## 📁 Dataset
 
+The dataset (`customer_data.csv`) includes the following fields:
+- `name`, `age`, `gender`, `education`, `income`, `country`, `purchase_frequency`, `spending`
+
+> The dataset is cleaned for missing values and duplicates during preprocessing.
+
+---
+
+## 📊 Key Features
+
+### 1. **Data Cleaning & Preprocessing**
+- Handled missing values and duplicate records.
+- Encoded categorical variables using `LabelEncoder`.
+- Standardized features for clustering.
+
+### 2. **Exploratory Data Analysis (EDA)**
+- Age group and gender distribution via pie charts.
+- Spending behavior by education level.
+- Country-wise average spending.
+- Income vs. spending and purchase frequency vs. spending correlation.
+
+### 3. **Customer Segmentation (K-Means Clustering)**
+- Used the **Elbow Method** to determine optimal clusters.
+- Visualized clusters by income vs. spending.
+- Inverse transformed cluster centers for interpretation.
+
+### 4. **Feature Importance Analysis (Random Forest)**
+- Ranked features influencing customer spending.
+- Visualized correlation and importance using a heatmap.
+
+### 5. **Spending Prediction (Decision Tree Regressor)**
+- Built a model to predict customer spending based on:
+  - Age, gender, education, income, country, and purchase frequency.
+- Achieved real-time prediction through **Gradio web interface**.
+
+---
+
+## 📷 Screenshots
+
+| Cluster Visualization | Gradio App |
+|-----------------------|-------------|
+| *(Add cluster plot here)* | *(Add Gradio interface screenshot here)* |
+
+---
+## 🚀 Running the Project
+## pip install -r requirements.txt
+
+
+Step 3: Run Jupyter or Colab Notebook
+
+    Open Customer_Segmentation_Analysis.ipynb in Jupyter Notebook or Google Colab.
+
+Step 4: Launch Gradio UI
+
+Run the below code cell from the notebook:
+
+interface.launch()
+
+🎯 Use Cases
+
+    Business Intelligence
+
+    Targeted Marketing
+
+    Personalized Customer Experience
+
+    Revenue Optimization
+
+## 🤝 Contributions
+
+Contributions are welcome! Feel free to fork this project, submit issues, or create pull requests.
+📄 License
+
+This project is licensed under the MIT License.
 🙋‍♀️ Author
-Vandana Kumari
-Feel free to connect on LinkedIn or reach out for collaboration.
-https://www.linkedin.com/in/vandana-kumari-a934bb227/
 
+Vandana Kumari
+📧 vandanapriyadarshi2222@gmail.com
+🔗 LinkedIn
+
+
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/yourusername/customer-segmentation-analysis.git
+cd customer-segmentation-analysis 
+---
